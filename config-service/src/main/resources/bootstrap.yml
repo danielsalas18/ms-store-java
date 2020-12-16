@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/danielsalas18/ms-store-java.git
+          searchPath: config-data
+          username: ${GIT_P_USER}
+          password: ${GIT_P_PASSWORD}
+  security:
+    user:
+      name: root
+      password: s3cr3t
